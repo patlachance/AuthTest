@@ -1,0 +1,11 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# secured directories
+*.nosync
+secured/
+secured.tgz
