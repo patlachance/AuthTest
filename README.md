@@ -1,0 +1,4 @@
+AuthTest
+========
+
+Authentication tests
