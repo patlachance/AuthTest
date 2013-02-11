@@ -18,9 +18,11 @@ case $1 in
 	tar zcf $FILEPLAIN secured
 	gpg --encrypt --recipient $GPGID $FILEPLAIN
 	rm -rf $FILEPLAIN secured
+	git push
 	;;
   'out')
 	echo "Pulling from remote origin"
+	git pull
 	rm -rf secured $FILEPLAIN
 	gpg --output $FILEPLAIN --decrypt $FILECRYPT
 	tar zxf $FILEPLAIN secured
